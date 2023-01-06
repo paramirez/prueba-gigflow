@@ -13,8 +13,8 @@ class PackageMapper:
     objects to/from `PackageModel` database model objects.
     """
 
-    def __init__(self, delivery_mapper: DeliveryMapper) -> None:
-        self.__delivery_mapper = delivery_mapper
+    def __init__(self) -> None:
+        self.__delivery_mapper = DeliveryMapper()
 
     def map_model_to_domain(self, package_model: PackageModel) -> Package:
         """

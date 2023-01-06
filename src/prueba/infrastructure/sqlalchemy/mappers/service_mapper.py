@@ -13,8 +13,8 @@ class ServiceMapper:
     domain objects to/from `ServiceModel` database model objects.
     """
 
-    def __init__(self, package_mapper: PackageMapper) -> None:
-        self.__package_mapper = package_mapper
+    def __init__(self) -> None:
+        self.__package_mapper = PackageMapper()
 
     def map_model_to_domain(self, service_model: ServiceModel) -> Service:
         """

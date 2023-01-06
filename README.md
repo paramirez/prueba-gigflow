@@ -41,3 +41,8 @@ poetry run seeds
 ```bash
 poetry run server
 ```
+
+6. View the API docs:
+```bash
+http://localhost:8000/docs
+```

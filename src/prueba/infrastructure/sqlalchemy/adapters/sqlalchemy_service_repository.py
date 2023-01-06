@@ -36,4 +36,4 @@ class SQLAlchemyServiceRepository(ServiceRepository):
         :ref:`ServiceRepository.get_all_services`
         """
         rows = self.__session.query(ServiceModel).all()
-        return list(map(self.__mapper.map_domain_to_model, rows))
+        return list(map(self.__mapper.map_model_to_domain, rows))
