@@ -16,10 +16,6 @@ from ..mappers.service_mapper import ServiceMapper
 class SQLAlchemyServiceRepository(ServiceRepository):
     """
     SQLAlchemyServiceRepository is a class that extends the `ServiceRepository` interface.
-
-    This class implements the methods defined in `ServiceRepository` using a 
-    PostgreSQL database as the storage backend. It is responsible for retrieving and
-    manipulating `Service` objects from the database.
     """
 
     def __init__(self, session: Session) -> None:

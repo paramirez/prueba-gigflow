@@ -10,7 +10,7 @@ packages = [{include = "prueba_gigflow"}]
 python = "^3.8"
 
 [tool.poetry.scripts]
-server = "src.main:start"
+server = "src.app.main:start"
 
 [build-system]
 requires = ["poetry-core"]
