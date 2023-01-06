@@ -24,7 +24,15 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Run the development server:
+3. Configure and run migrations:
+   1. Create `.env` file  
+   2. set environment variable `DATABASE_URL` with database url
+   3. Run migrations
+```bash
+alembic upgrade heads
+```
+
+4. Run the development server:
 ```bash
 poetry run server
 ```

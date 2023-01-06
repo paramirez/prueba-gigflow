@@ -1,5 +1,5 @@
 """
-Module containing the connectio and the get_session generator function.
+Module containing the connection and the get_session generator function.
 """
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
