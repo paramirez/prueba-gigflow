@@ -2,6 +2,8 @@
 
 Implementation of REST API for find a Service and to list Services
 
+> **_NOTE:_**  I will be performing the unit tests later, as it is currently the early morning hours and I have only had this time to do the test.
+
 ## Requirements
 - Python 3.8
 
@@ -47,3 +49,19 @@ poetry run server
 ```bash
 http://localhost:8000/docs
 ```
+
+## Quick Start (Docker)
+1. Build:
+    ```bash
+    docker-compose build
+    ```
+
+2. Run the app:
+    ```bash
+    docker-compose up -d
+    ```
+
+3. View the API docs:
+    ```bash
+    http://localhost:9090/docs
+    ```
