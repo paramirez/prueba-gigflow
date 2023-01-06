@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "prueba-gigflow"
+version = "0.1.0"
+description = "Technical test Pablo Ramírez for Gigflow"
+authors = ["Pablo <pabloandres2700@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prueba_gigflow"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
+server = "src.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

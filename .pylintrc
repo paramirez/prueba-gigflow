@@ -1,0 +1,4 @@
+[MASTER]
+disable=E0402
+extension-pkg-allow-list=pydantic
+fail-under = 9
