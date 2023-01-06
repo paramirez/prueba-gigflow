@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - 8081:8080
+    environment:
+      DATABASE_URL: ${DATABASE_URL}

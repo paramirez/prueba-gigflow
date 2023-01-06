@@ -8,10 +8,20 @@ packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+pydantic = "^1.10.4"
+psycopg2-binary = "^2.9.5"
+fastapi = "^0.88.0"
+sqlalchemy = "^1.4.46"
 
 [tool.poetry.scripts]
 server = "src.app.main:start"
 seeds = "src.migrations.initial_seed:run"
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.9.1"
+pylint = "^2.15.9"
+autopep8 = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
