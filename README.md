@@ -1,6 +1,6 @@
 # Technical test Pablo Ramírez for Gigflow
 
-Implementation of REST API for find a Service and to list Services
+Implementation of a REST API to find and list services using a hexagonal architecture
 
 > **_NOTE:_**  I will be performing the unit tests later, as it is currently the early morning hours and I have only had this time to do the test.
 
