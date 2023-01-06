@@ -32,7 +32,12 @@ pip install -r requirements.txt
 alembic upgrade heads
 ```
 
-4. Run the development server:
+4. (Optional) Run seeds:
+```bash
+poetry run seeds
+```
+
+5. Run the development server:
 ```bash
 poetry run server
 ```

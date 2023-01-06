@@ -4,13 +4,14 @@ version = "0.1.0"
 description = "Technical test Pablo Ramírez for Gigflow"
 authors = ["Pablo <pabloandres2700@gmail.com>"]
 readme = "README.md"
-packages = [{include = "prueba_gigflow"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.scripts]
 server = "src.app.main:start"
+seeds = "src.migrations.initial_seed:run"
 
 [build-system]
 requires = ["poetry-core"]
