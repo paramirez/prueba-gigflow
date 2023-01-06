@@ -6,7 +6,7 @@ from sqlalchemy.orm import relationship
 from .base_model import BaseModel
 
 
-class ServiceModule(BaseModel):
+class ServiceModel(BaseModel):
     """
     SQLAlchemy model class for representing a service.
 
